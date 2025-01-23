@@ -3,13 +3,15 @@ const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 
 function createTheGrid() {
-    const numberCells = 5 * 5
+    const gridType = document.getElementById('grid-select')
+    const size = parseInt(gridType.value)
+    const numberCells = size * size
     const indexRnd = Math.floor(Math.random() * numberCells)
 
     grid.innerHTML = ''
-    grid.style.gridTemplateColumns = `repeat(${5}, 50px)`
-    
-    for (let i = 0; i < 5 * 5; i++) {
+    grid.style.gridTemplateColumns = `repeat(${size}, 50px)`
+
+    for (let i = 0; i < size * size; i++) {
         const cell = document.createElement('div');
         cell.classList.add('cell')
         grid.appendChild(cell)
