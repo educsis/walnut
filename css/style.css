@@ -50,3 +50,9 @@ h1 {
     border: 1px solid #CCC;
     height: 34px;
   }
+
+  .squirell {
+    background-image: url('https://www.walnut.io/app/uploads/2023/05/Mask-group-5.jpg');
+    background-size: cover;
+    background-position: center;
+  }
