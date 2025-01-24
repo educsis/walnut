@@ -34,7 +34,7 @@ body {
 
 .text-color-4 {
     color: var(--t-color-4);
-    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
 }
 
 .well-done-wrapper {
