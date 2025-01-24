@@ -26,7 +26,7 @@
         </a>
     </div>
     <select id="grid-select">
-        <option value="0">Select a grid size</option>
+        <option value="0">Pick mode</option>
         <option value="5">5x5 Grid</option>
         <option value="10">10x10 Grid</option>
         <option value="15">15x15 Grid</option>
@@ -35,9 +35,12 @@
         <button id="start" class="btn-1">Start</button>
         <button id="stop" class="btn-2" disabled>Stop</button>
     </div>
-    <div id="grid">
-        
+    <div id="box-count">
+        <h2 class="text-color-1">Yellow boxes <span id="yellow-count" class="text-color-2">0</span></h2>
+        <h2 class="text-color-1">White boxes <span id="white-count" class="text-color-3">0</span></h2>
     </div>
+    <div id="well-done"></div>
+    <div id="grid"></div>
 </body>
     <script src="js/script.js"></script>
 </html>
