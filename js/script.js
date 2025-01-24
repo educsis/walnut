@@ -27,7 +27,7 @@ function createTheGrid() {
         grid.appendChild(cell)
 
         if (i === indexRnd) {
-            cell.classList.add('squirell');
+            cell.classList.add('squirrel');
         }
 
         // create the hover to change to yellow
@@ -42,19 +42,19 @@ function createTheGrid() {
             } else if(targetClass == 'cell yellow-cell') {
                 whBoxes += 1
                 whiteCount.innerHTML = whBoxes
-            } else if(targetClass == 'cell squirell' || targetClass == 'cell squirell yellow-cell') {
-                foundSquirell()
+            } else if(targetClass == 'cell squirrel' || targetClass == 'cell squirrel yellow-cell') {
+                foundSquirrel()
             }
         });
     }
 }
 
-function foundSquirell() {
+function foundSquirrel() {
     start.disabled = false
     stop.disabled = true
     // clear the grid
     grid.innerHTML = ''
-    document.getElementById('well-done').innerHTML = '<div class="well-done-wrapper"><h1 class="text-color-4">Well Done! <br> You have found the squirell</h1></div>'
+    document.getElementById('well-done').innerHTML = '<div class="well-done-wrapper"><h1 class="text-color-4">Well Done! <br> You have found the squirrel</h1></div>'
     celebrate()
 }
 
