@@ -54,7 +54,7 @@ function foundSquirell() {
     stop.disabled = true
     // clear the grid
     grid.innerHTML = ''
-    document.getElementById('well-done').innerHTML = '<h1 class="text-color-4">Well Done! <br> You have found the squirell</h1>'
+    document.getElementById('well-done').innerHTML = '<div class="well-done-wrapper"><h1 class="text-color-4">Well Done! <br> You have found the squirell</h1></div>'
 }
 
 start.addEventListener('click', () => {
@@ -69,4 +69,6 @@ stop.addEventListener('click', () => {
     stop.disabled = true
     // clear the grid
     grid.innerHTML = ''
+    document.getElementById('yellow-count').innerHTML = '0'
+    document.getElementById('white-count').innerHTML = '0'
 });
