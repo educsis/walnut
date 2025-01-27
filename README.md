@@ -11,4 +11,4 @@ https://walnut-edwin.netlify.app/
 
 # Screenshot
 
-
+![Screenshot](https://raw.githubusercontent.com/educsis/walnut/refs/heads/main/screenshot.png)
